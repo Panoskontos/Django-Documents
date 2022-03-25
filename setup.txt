@@ -26,13 +26,47 @@ python manage.py createsuperuser
 
 In settings.py add 'myappname.apps.MyappnameConfig',
 
+--------------HTML----------------------
 
-#Add css and js
+add in settings.py TEMPLATES
+
+'DIRS': [ os.path.join(BASE_DIR,'templates')], 
+
+create folder templates with main.html inside
+
+In views 
+----------------------------
+def index(request):
+    context={
+    }
+    return render(request, 'index.html', context)
+------------------------------
+In urls
+-------------------------------
+from myapp.views import index
+
+path('',index, name='home')
+-----------------------------
+
+-----------------css and js --------------------
 
 create static folder and inside css & js folders
+
 
 # in settings.py
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
+
+add {% load static %} to your main template
+
+add this
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+in head for css
+and this below body for js
+
+<script src="{% static 'js/main.js' %}"></script>
+
 
