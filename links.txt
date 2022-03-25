@@ -2,3 +2,20 @@
 Activate Virtual Enviroment
 https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/
 
+
+Django documentation
+https://docs.djangoproject.com/en/4.0/intro/install/#install-django
+pip install django
+python
+import django
+
+
+# Create Your app
+django-admin startproject mysite
+
+python manage.py runserver 8080
+
+python manage.py startapp myapp
+
+python manage.py makemigrations
+python manage.py migrate
