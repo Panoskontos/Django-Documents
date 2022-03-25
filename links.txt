@@ -24,3 +24,5 @@ python manage.py migrate
 
 python manage.py createsuperuser
 
+In settings.py add 'myappname.apps.MyappnameConfig',
+
