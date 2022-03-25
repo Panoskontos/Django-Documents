@@ -5,7 +5,7 @@
 
 ![code_imports](https://user-images.githubusercontent.com/65974766/160032371-3cffa52e-0d0e-4cc9-87b4-023c70205aa4.png)
 
-![code_class](https://user-images.githubusercontent.com/65974766/160032239-991c7f07-f9f7-4b99-89d6-0157e8d91600.png)
+![code_views](https://user-images.githubusercontent.com/65974766/160033306-6dfff48d-1c81-4645-8395-892d5d99bde0.png)
 
 ### urls.py
 
