@@ -26,3 +26,13 @@ python manage.py createsuperuser
 
 In settings.py add 'myappname.apps.MyappnameConfig',
 
+
+#Add css and js
+
+create static folder and inside css & js folders
+
+# in settings.py
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
+
