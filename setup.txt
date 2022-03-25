@@ -24,7 +24,7 @@ python manage.py migrate
 
 python manage.py createsuperuser
 
-In settings.py add 'myappname.apps.MyappnameConfig',
+In settings.py on INSTALLED_APPS add 'myappname.apps.MyappnameConfig',
 
 --------------HTML----------------------
 
@@ -70,3 +70,28 @@ and this below body for js
 <script src="{% static 'js/main.js' %}"></script>
 
 
+------------------CRISPY FORMS----------------
+Create forms.py
+
+add simple form inside
+
+from django import forms
+class PersonForm(forms.Form):
+    first_name = forms.CharField(max_length=50)
+    last_name = forms.CharField(max_length=50)
+
+Connect it with your main.html
+
+Install crispy forms
+https://django-crispy-forms.readthedocs.io/en/latest/install.html
+
+pip install django-crispy-forms
+
+in settings.py
+
+INSTALLED_APPS = (
+    ...
+    'crispy_forms',
+)
+
+CRISPY_TEMPLATE_PACK = 'bootsrap4'
