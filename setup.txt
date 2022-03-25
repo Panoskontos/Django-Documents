@@ -87,7 +87,7 @@ https://django-crispy-forms.readthedocs.io/en/latest/install.html
 
 pip install django-crispy-forms
 
-in settings.py
+in settings.py add these two
 
 INSTALLED_APPS = (
     ...
@@ -95,3 +95,22 @@ INSTALLED_APPS = (
 )
 
 CRISPY_TEMPLATE_PACK = 'bootsrap4'
+
+
+
+
+-----------------Template Inheritance
+add to main.html
+
+{% block content %}
+        
+{% endblock
+
+
+add to other templates
+
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% endblock %}
