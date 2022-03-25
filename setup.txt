@@ -94,12 +94,12 @@ INSTALLED_APPS = (
     'crispy_forms',
 )
 
-CRISPY_TEMPLATE_PACK = 'bootsrap4'
+CRISPY_TEMPLATE_PACK = 'bootsrtap4'
 
 
 
 
------------------Template Inheritance
+--------------------------------Template Inheritance
 add to main.html
 
 {% block content %}
@@ -114,3 +114,24 @@ add to other templates
 {% block content %}
 
 {% endblock %}
+
+
+
+-------------------------------include app URL path
+
+create urls.py file in your app
+add this
+--------------
+from django.urls import path
+
+urlpatterns = [
+
+]
+-------------
+
+go to project urls.py
+add this
+---------------------------------
+from django.urls import include
+
+path('myapp/', include('myapp.urls')),
