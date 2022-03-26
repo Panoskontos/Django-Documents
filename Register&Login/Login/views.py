@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from .forms import *
 from django.shortcuts import render, redirect
@@ -23,3 +24,9 @@ def loginview(request):
         'form': form
     }
     return render(request, 'library/login.html', context)
+
+
+# next import this
+# from django.contrib.auth.decorators import login_required
+# and use this in all views you want to add login
+# @login_required(login_url='login')
