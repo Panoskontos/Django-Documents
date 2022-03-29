@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+
+
+<!-- Django Price Filter -->
+<form action="" method="get">
+
+    <input type="range" name="" id="maxrange" oninput="id_range_1.value=this.value" min="{{phonemin}}" max="{{phonemax}}" value="{{phonemax}}">
+    <br>
+    <div>
+        <span>Max Number</span>
+        <input min="{{phonemin}}" max="{{phonemax}}" value="{{phonemax}}" onkeyup="maxrange.value=this.value" type="text" name="range_max" id="id_range_1">
+    </div>
+    <button type="submit">Apply</button>
+</form>
+
+{{messages}}
+
+{% endblock %}
