@@ -1,6 +1,33 @@
 
-<form action="" method="post">
-    {% csrf_token %}
-    {{form}}
-    <button type="submit">Register</button>
-</form>
+
+<style>
+    body{
+        background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+}
+
+    .card {
+        padding: 20px;
+        background-color: white;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+    }
+</style>
+
+<div class="card">
+    <h3>My app</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Submit</button>
+    </form>
+</div>
