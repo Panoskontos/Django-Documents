@@ -1,0 +1,15 @@
+
+
+<tbody>
+  {% for k,v in mydict.items %}
+  <tr>
+      <td>{{k}}</td>
+      <td>
+          {% for i in v %}
+            {{i}}&nbsp;&nbsp;
+          {% endfor %}
+        </td>
+    
+  </tr>
+  {% endfor %}
+</tbody>
